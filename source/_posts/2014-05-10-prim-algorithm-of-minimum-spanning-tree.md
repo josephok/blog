@@ -3,10 +3,10 @@ layout: post
 title: 'Prim算法求最小生成树'
 date: 2014-05-10 08:59
 comments: true
-categories: 
+categories: 算法
 ---
 如下所示的无向网络包含7个顶点和12条边，边权重之和为243。
-![](http://projecteuler.net/project/images/p_107_1.gif)
+![](http://ww1.sinaimg.cn/large/90b90757gy1fqjicwpd9qg20al07qa9w.jpg)
 
 这个网络还可以用如下的矩阵来表示：
 
@@ -14,7 +14,7 @@ categories:
 
 但是，在保证网络上所有点之间连通性的前提下，可以将某些边去除掉，从而实现该网络的优化。能够做到最多节省的网络如下所示。其权重和为93，与原网络相比共节省了243 − 93 = 150。
 
-![](http://projecteuler.net/project/images/p_107_2.gif)
+![](http://ww1.sinaimg.cn/large/90b90757gy1fqjifpxq5vg20ap080glf.jpg)
 
 [network.txt](http://projecteuler.net/project/network.txt)包含一个拥有四十个顶点的网络，以矩阵形式给出。求在保证连通性的前提下，通过去除边可以做到的最多节省。
 
@@ -28,8 +28,8 @@ categories:
 2. 初始化：Vnew = {x}，其中x为集合V中的任一节点（起始点），Enew = {}；
 3. 重复下列操作，直到Vnew = V：
 
-a) 在集合E中选取权值最小的边（u, v），其中u为集合Vnew中的元素，而v则不是      
-	（如果存在有多条满足前述条件即具有相同权值的边，则可任意选取其中之一）；      
+a) 在集合E中选取权值最小的边（u, v），其中u为集合Vnew中的元素，而v则不是
+	（如果存在有多条满足前述条件即具有相同权值的边，则可任意选取其中之一）；
 b) 将v加入集合Vnew中，将（u, v）加入集合Enew中；
 
 4. 输出：使用集合Vnew和Enew来描述所得到的最小生成树。
@@ -96,7 +96,7 @@ def prim_tree(graph):
     selected.add(vertes[0])
     # 移除已选顶点
     vertes.pop(0)
-    
+
     new_graph = defaultdict(dict)
     # 只要还有未选中顶点，则循环
     while vertes:
@@ -131,8 +131,8 @@ print("saving: {}".format(sum1 - sum2))
 ```
 
 ```bash
-$ time python3 solve.py 
-before: 
+$ time python3 solve.py
+before:
 261832
 after:
 2153
