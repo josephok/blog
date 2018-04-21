@@ -84,3 +84,5 @@ deploy:
     coding: git@git.coding.net:joseph/joseph.coding.me.git
   branch: master
   message: Add post
+
+disqus_shortname: yonggao
