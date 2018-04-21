@@ -24,7 +24,7 @@ It all starts with fractions and the number line. We start off with the interval
 
 Now let's play a little game. We're going to take the fractions 0/1 and 1/1 and calculate their mediant by taking the sum of their numerators and denominators to get (0+1)/(1+1)=1/2:
 
-![](http://ww4.sinaimg.cn/large/dd1b49b3jw1efffjluy5nj205j00q3ya.jpg)
+![](https://ww4.sinaimg.cn/large/dd1b49b3jw1efffjluy5nj205j00q3ya.jpg)
 
 With this new point on the line, we can do this mediant operation again to get (0+1)/(1+2)=1/3 and (1+1)/(2+1)=2/3:
 

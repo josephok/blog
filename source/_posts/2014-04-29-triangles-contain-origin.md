@@ -24,7 +24,7 @@ Project Euler第102题：
 大致意思是给定3个点A, B, C，判断A, B, C组成的三角形是否包含原点P(0, 0)，或者说原点是否在三角形ABC的内部。
 解答这道题的思路是判断ABC的面积是否等于PAB, PBC, PAC三个面积之和。
 
-![](http://ww4.sinaimg.cn/large/90b90757gw1efwprg17zjj20dd0a3jrr.jpg)
+![](https://ww4.sinaimg.cn/large/90b90757gw1efwprg17zjj20dd0a3jrr.jpg)
 P在三角形内部
 
 ![](https://ww1.sinaimg.cn/large/90b90757gw1efwq0l6wrzj20em0ahmxl.jpg)
