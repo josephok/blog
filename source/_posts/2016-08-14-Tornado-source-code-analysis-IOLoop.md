@@ -1,8 +1,8 @@
 ---
 title: Tornado源码解析之IOLoop
 date: 2016-08-14 22:33:57
-categories: python
-tags: Tornado
+categories: 编程语言
+tags: [Python, Tornado]
 ---
 
 # 0. 简介

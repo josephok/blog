@@ -2,6 +2,7 @@
 layout: post
 title: Computer Systems A Programmer's Perspective读书笔记
 date: 2013-12-03 14:13
+categories: 数据结构与算法
 ---
 2的补码表示为：
 $$B2T_w(x) = -x_{w-1}2^{w-1} + \sum_{i=0}^{w-2} x_i2^i$$

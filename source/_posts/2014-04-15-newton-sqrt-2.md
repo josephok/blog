@@ -3,7 +3,7 @@ layout: post
 title: '利用牛顿法求2的平方根'
 date: 2014-04-15 08:38
 comments: true
-categories: math
+categories: Math
 ---
 牛顿法（Newton's method）又称为牛顿-拉弗森方法（Newton-Raphson method），它是一种在实数域和复数域上近似求解方程的方法。方法使用函数f(x)的泰勒级数的前面几项来寻找方程f(x)=0的根。
 

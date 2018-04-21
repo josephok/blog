@@ -3,7 +3,7 @@ layout: post
 title: '二项分布与泊松分布'
 date: 2014-04-14 03:08
 comments: true
-categories:
+categories: Math
 ---
 * 二项分布
 

@@ -3,7 +3,7 @@ layout: post
 title: 'Haml简介'
 date: 2014-03-05 03:47
 comments: true
-categories: 
+categories: 前端
 ---
 [Haml](http://haml.info/)是X **H**TML **A**bstraction **M**arkup **L**anguage的缩写，用Ruby写成，可以将写成的模版转换为HTML代码。Haml的优点是简洁省去了HTML很多繁琐的标签。
 

@@ -3,7 +3,7 @@ layout: post
 title: '好玩：旋转的八卦'
 date: 2014-04-14 06:10
 comments: true
-categories: 
+categories: 前端
 ---
 利用CSS动画可以制作一个旋转的八卦：
 

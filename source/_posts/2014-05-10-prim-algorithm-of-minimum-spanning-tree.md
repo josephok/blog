@@ -3,18 +3,18 @@ layout: post
 title: 'Prim算法求最小生成树'
 date: 2014-05-10 08:59
 comments: true
-categories: 算法
+categories: 数据结构与算法
 ---
 如下所示的无向网络包含7个顶点和12条边，边权重之和为243。
-![](http://ww1.sinaimg.cn/large/90b90757gy1fqjicwpd9qg20al07qa9w.jpg)
+![](https://ww1.sinaimg.cn/large/90b90757gy1fqjicwpd9qg20al07qa9w.jpg)
 
 这个网络还可以用如下的矩阵来表示：
 
-![](http://ww1.sinaimg.cn/large/90b90757gw1eg9ad81a4bj208207mwer.jpg)
+![](https://ww1.sinaimg.cn/large/90b90757gw1eg9ad81a4bj208207mwer.jpg)
 
 但是，在保证网络上所有点之间连通性的前提下，可以将某些边去除掉，从而实现该网络的优化。能够做到最多节省的网络如下所示。其权重和为93，与原网络相比共节省了243 − 93 = 150。
 
-![](http://ww1.sinaimg.cn/large/90b90757gy1fqjifpxq5vg20ap080glf.jpg)
+![](https://ww1.sinaimg.cn/large/90b90757gy1fqjifpxq5vg20ap080glf.jpg)
 
 [network.txt](http://projecteuler.net/project/network.txt)包含一个拥有四十个顶点的网络，以矩阵形式给出。求在保证连通性的前提下，通过去除边可以做到的最多节省。
 

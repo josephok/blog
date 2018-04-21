@@ -3,7 +3,7 @@ layout: post
 title: 'sass简介'
 date: 2014-02-13 07:56
 comments: true
-categories: 
+categories: 前端
 ---
 [Sass](http://sass-lang.com/)是一种CSS预处理器。它可以让开发者少写一些CSS代码。
 

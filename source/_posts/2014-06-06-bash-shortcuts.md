@@ -3,7 +3,7 @@ layout: post
 title: 'Bash 快捷键'
 date: 2014-06-06 14:37
 comments: true
-categories: [bash]
+categories: [Shell]
 ---
 生活在 Bash shell 中，熟记以下快捷键，将极大的提高你的命令行操作效率。
 

@@ -3,7 +3,7 @@ layout: post
 title: '正则表达式语法'
 date: 2013-11-28 02:21
 comments: true
-categories: 
+categories: Regex
 ---
 <table>
 	<tbody>

@@ -3,7 +3,8 @@ layout: post
 title: 'Python __new__解释'
 date: 2014-05-04 06:10
 comments: true
-categories: 
+categories: 编程语言
+tags: Python
 ---
 Python实例化对象操作过程，首先是调用`__new__()`方法创建实例，然后调用`__init__()`方法初始化对象。一般情况下，定义类时不需要显式的重写`__new__()`方法；但是某些情况下，比如继承immutable类型(如int, str, tuple, frozenset)时，因无法在`__init__()`中修改其元素，所以需要重写`__new__()`。
 

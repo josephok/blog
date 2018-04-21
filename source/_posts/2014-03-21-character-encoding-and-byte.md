@@ -3,7 +3,7 @@ layout: post
 title: '字符编码与字节'
 date: 2014-03-21 06:03
 comments: true
-categories: 
+categories: 计算机基础
 ---
 * 编码系统
 

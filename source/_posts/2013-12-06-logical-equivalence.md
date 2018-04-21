@@ -3,7 +3,7 @@ layout: post
 title: '逻辑等价'
 date: 2013-12-06 06:42
 comments: true
-categories: 
+categories: Math
 ---
 如果p ↔ q是永真式，命题p和q称为是逻辑等价的。记号p≡q表示p和q逻辑等价。
 

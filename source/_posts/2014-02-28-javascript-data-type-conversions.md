@@ -3,7 +3,7 @@ layout: post
 title: 'JavaScript数据类型转换'
 date: 2014-02-28 09:47
 comments: true
-categories: 
+categories: 前端
 ---
 * 非数值类型转换为数值类型
 

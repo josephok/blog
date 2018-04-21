@@ -3,7 +3,7 @@ layout: post
 title: 'css position'
 date: 2014-02-13 08:10
 comments: true
-categories: 
+categories: 前端
 ---
 CSS position属性用来设定元素的位置。
 

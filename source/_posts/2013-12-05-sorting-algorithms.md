@@ -3,7 +3,7 @@ layout: post
 title: '排序算法'
 date: 2013-12-05 03:40
 comments: true
-categories:
+categories: 数据结构与算法
 ---
 * 插入排序（Insertion Sort）
 

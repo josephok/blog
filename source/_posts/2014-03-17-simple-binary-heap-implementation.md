@@ -3,7 +3,7 @@ layout: post
 title: '二叉堆简单实现'
 date: 2014-03-17 02:37
 comments: true
-categories: 
+categories: 数据结构与算法
 ---
 * 二叉堆的定义
 

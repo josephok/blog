@@ -3,7 +3,8 @@ layout: post
 title: 'Python学习笔记'
 date: 2014-02-12 01:48
 comments: true
-categories: 
+categories: 编程语言
+tags: Python
 ---
 * 内置数据类型
 

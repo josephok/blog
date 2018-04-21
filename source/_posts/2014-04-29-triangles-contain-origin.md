@@ -3,7 +3,7 @@ layout: post
 title: '判断某点是否在三角形内部'
 date: 2014-04-29 11:50
 comments: true
-categories:
+categories: 数据结构与算法
 ---
 Project Euler第102题：
 
@@ -27,7 +27,7 @@ Project Euler第102题：
 ![](http://ww4.sinaimg.cn/large/90b90757gw1efwprg17zjj20dd0a3jrr.jpg)
 P在三角形内部
 
-![](http://ww1.sinaimg.cn/large/90b90757gw1efwq0l6wrzj20em0ahmxl.jpg)
+![](https://ww1.sinaimg.cn/large/90b90757gw1efwq0l6wrzj20em0ahmxl.jpg)
 P在三角形外部
 
 如何计算三角形面积？

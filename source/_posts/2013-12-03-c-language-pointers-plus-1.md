@@ -3,7 +3,8 @@ layout: post
 title: 'c语言指针加1'
 date: 2013-12-03 07:57
 comments: true
-categories: 
+categories: 编程语言
+tags: C
 ---
 C语言中，指针变量存储的是地址，那么我们不禁要问：将指针变量加1，那么地址变为多少？
 比如某个指针变量p的值为`0x8989f580`，p + 1的值是多少？

@@ -3,7 +3,7 @@ layout: post
 title: 'Apache2 .htaccess文件详解'
 date: 2014-02-13 08:00
 comments: true
-categories: 
+categories: Apache
 ---
 [htaccess文件](http://en.wikipedia.org/wiki/Htaccess) 是Apache默认的directory级别的配置文件。
 

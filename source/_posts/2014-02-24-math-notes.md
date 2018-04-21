@@ -3,7 +3,7 @@ layout: post
 title: 'Math notes'
 date: 2014-02-24 04:16
 comments: true
-categories:
+categories: Math
 ---
 * 导数
 

@@ -3,7 +3,7 @@ layout: post
 title: 'jQuery与JavaScript写法对比'
 date: 2014-02-13 08:12
 comments: true
-categories: 
+categories: 前端
 ---
 [jQuery](http://jquery.com/)是一个很流行的JaVascript库，简化了JavaScript的编程。作为学习，我们可以试试将jQuery的一些用法用原生的JavaScript写出来。
 

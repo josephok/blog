@@ -3,7 +3,7 @@ layout: post
 title: '数据结构学习'
 date: 2013-11-25 05:39
 comments: true
-categories:
+categories: 数据结构与算法
 ---
 ## 一些数学知识：
 

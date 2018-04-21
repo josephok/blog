@@ -3,7 +3,7 @@ layout: post
 title: '同余幂求解'
 date: 2013-12-09 09:41
 comments: true
-categories:
+categories: Math
 ---
 在密码学中重要的是能有效地求$ b^n mod (m) $, 其中$b, n, m$都是大整数。先计算$b^n$，再求$b^n$除以$m$的余数是不可行的，因为$b^n$是非常大的数。可行的是一种利用指数n的二进制展开的算法。这个算法依次求
 $$

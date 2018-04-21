@@ -3,7 +3,7 @@ layout: post
 title: 'Project Euler Problem 71 and Stern-Brocot tree'
 date: 2014-03-24 03:53
 comments: true
-categories: 
+categories: 数据结构与算法
 ---
 [Project Euler Problem 71](http://projecteuler.net/problem=71) describes as follows:
 

@@ -3,7 +3,7 @@ layout: post
 title: '最短路径算法(Dijkstra’s shortest path algorithm)'
 date: 2013-12-31 09:39
 comments: true
-categories: 
+categories: 数据结构与算法
 ---
 算法描述：
 
@@ -37,13 +37,13 @@ sptSet中的顶点显示为绿色：(&#8734;的顶点未予显示)
 现在选取顶点5，sptSet变为{0, 1, 7, 6, 5}，更新5的邻接顶点：2为11+4=15>12故不更新，3为11+14=25，4为11+10=21
 ![](http://ww3.sinaimg.cn/large/90b90757gw1ec50hbzue9j20hl08k74j.jpg)
 现在选取顶点2，sptSet变为{0, 1, 7, 6, 5, 2}，更新2的邻接顶点：3为12+7=19\<25 故更新3的距离值为19，8为12+2=14\<15 故更新8的距离值为14，5为12+4=16>11故不更新。
-![](http://ww1.sinaimg.cn/large/90b90757gw1ec50rnhr0vj20hl08kglv.jpg)
+![](https://ww1.sinaimg.cn/large/90b90757gw1ec50rnhr0vj20hl08kglv.jpg)
 现在选取顶点8，sptSet变为{0, 1, 7, 6, 5, 2, 8}，8的邻接顶点：2, 7, 6不用更新。
-![](http://ww1.sinaimg.cn/large/90b90757gw1ec50wqfo85j20hl08kmxf.jpg)
+![](https://ww1.sinaimg.cn/large/90b90757gw1ec50wqfo85j20hl08kmxf.jpg)
 现在选取顶点3，sptSet变为{0, 1, 7, 6, 5, 2, 8, 3}，3的邻接顶点2, 5, 4不用更新。
 ![](http://ww3.sinaimg.cn/large/90b90757gw1ec511amgwbj20hl08kq37.jpg)
 最后选取顶点4，sptSet变为{0, 1, 7, 6, 5, 2, 8, 3, 4}，此时已经包含图中所有顶点，故为最终结果。
-![](http://ww1.sinaimg.cn/large/90b90757gw1ec511vb6c5j20hl08kq37.jpg)
+![](https://ww1.sinaimg.cn/large/90b90757gw1ec511vb6c5j20hl08kq37.jpg)
 
 C语言实现：
 我们使用一个boolean数组sptSet[]表示SPT中的顶点，如果stpSet[v]=true, 则顶点v在SPT中。数组dist[]存贮所有顶点的最短路径值。
@@ -51,27 +51,27 @@ C语言实现：
 ```c
 // A C / C++ program for Dijkstra's single source shortest path algorithm.
 // The program is for adjacency matrix representation of the graph
- 
+
 #include <stdio.h>
 #include <limits.h>
 typedef enum {false, true}bool;
 // Number of vertices in the graph
 #define V 9
- 
+
 // A utility function to find the vertex with minimum distance value, from
 // the set of vertices not yet included in shortest path tree
 int minDistance(int dist[], bool sptSet[])
 {
    // Initialize min value
    int min = INT_MAX, min_index;
- 
+
    for (int v = 0; v < V; v++)
      if (sptSet[v] == false && dist[v] <= min)
          min = dist[v], min_index = v;
- 
+
    return min_index;
 }
- 
+
 // A utility function to print the constructed distance array
 int printSolution(int dist[], int n)
 {
@@ -79,49 +79,49 @@ int printSolution(int dist[], int n)
    for (int i = 0; i < V; i++)
       printf("%d \t\t %d\n", i, dist[i]);
 }
- 
+
 // Funtion that implements Dijkstra's single source shortest path algorithm
 // for a graph represented using adjacency matrix representation
 void dijkstra(int graph[V][V], int src)
 {
      int dist[V];     // The output array.  dist[i] will hold the shortest
                       // distance from src to i
- 
+
      bool sptSet[V]; // sptSet[i] will true if vertex i is included in shortest
                      // path tree or shortest distance from src to i is finalized
- 
+
      // Initialize all distances as INFINITE and stpSet[] as false
      for (int i = 0; i < V; i++)
         dist[i] = INT_MAX, sptSet[i] = false;
- 
+
      // Distance of source vertex from itself is always 0
      dist[src] = 0;
- 
+
      // Find shortest path for all vertices
      for (int count = 0; count < V-1; count++)
      {
        // Pick the minimum distance vertex from the set of vertices not
        // yet processed. u is always equal to src in first iteration.
        int u = minDistance(dist, sptSet);
- 
+
        // Mark the picked vertex as processed
        sptSet[u] = true;
- 
+
        // Update dist value of the adjacent vertices of the picked vertex.
        for (int v = 0; v < V; v++)
- 
-         // Update dist[v] only if is not in sptSet, there is an edge from 
-         // u to v, and total weight of path from src to  v through u is 
+
+         // Update dist[v] only if is not in sptSet, there is an edge from
+         // u to v, and total weight of path from src to  v through u is
          // smaller than current value of dist[v]
-         if (!sptSet[v] && graph[u][v] && dist[u] != INT_MAX 
+         if (!sptSet[v] && graph[u][v] && dist[u] != INT_MAX
                                        && dist[u]+graph[u][v] < dist[v])
             dist[v] = dist[u] + graph[u][v];
      }
- 
+
      // print the constructed distance array
      printSolution(dist, V);
 }
- 
+
 // driver program to test above function
 int main()
 {
@@ -136,9 +136,9 @@ int main()
                       {8, 11, 0, 0, 0, 0, 1, 0, 7},
                       {0, 0, 2, 0, 0, 0, 6, 7, 0}
                      };
- 
+
     dijkstra(graph, 0);
- 
+
     return 0;
 }
 ```

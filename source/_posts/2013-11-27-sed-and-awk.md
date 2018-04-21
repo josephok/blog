@@ -3,7 +3,7 @@ layout: post
 title: 'sed and awk'
 date: 2013-11-27 05:36
 comments: true
-categories: 
+categories: Shell
 ---
 ```bash
 list文件内容：
@@ -17,7 +17,7 @@ Hubert Sims, 328A Brook Road, Roanoke VA
 Amy Wilde, 334 Bayshore Pkwy, Mountain View CA
 Sal Carpenter, 73 6th Street, Boston MA
 
-将 MA替换成, Massachusetts: 
+将 MA替换成, Massachusetts:
 
 $ sed 's/ MA/, Massachusetts/' list
 John Daggett, 341 King Road, Plymouth, Massachusetts
@@ -51,7 +51,7 @@ Amy
 Sal
 
 打印包含MA的行
-$ awk '/MA/' list 
+$ awk '/MA/' list
 John Daggett, 341 King Road, Plymouth MA
 Eric Adams, 20 Post Road, Sudbury MA
 Sal Carpenter, 73 6th Street, Boston MA

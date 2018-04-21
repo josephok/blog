@@ -3,7 +3,7 @@ layout: post
 title: 'CSS优先级计算'
 date: 2014-02-13 08:11
 comments: true
-categories: 
+categories: 前端
 ---
 我们知道，当css样式同时作用于某个元素时，会产生层叠。浏览器层叠各个来源样式的顺序为：
 
@@ -27,7 +27,7 @@ categories:
 
 * 计算特指度(Specificity)
 
-我们使用`style属性-I-C-E`来表示特指度。这里`style属性`表示行内样式。比如： 
+我们使用`style属性-I-C-E`来表示特指度。这里`style属性`表示行内样式。比如：
 
 `<p style="color: #ffffff"></p>`
 
