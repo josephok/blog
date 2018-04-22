@@ -43,6 +43,8 @@ $ hexo new [layout] <title>
 
 您可以在命令中指定文章的布局（layout），默认为 `post`，可以通过修改 `_config.yml` 中的 `default_layout` 参数来指定默认布局。
 
+<!-- more -->
+
 ## 5. 预览站点
 
 ```bash
@@ -99,7 +101,13 @@ deploy:
 
 ![](https://ws1.sinaimg.cn/large/90b90757gy1fqlhept0wvj20sv07hgmf.jpg)
 
-这里的`CODING_TOKEN`和`GH_TOKEN`分别是coding和Github的access token，生成方法分别见官方文档，注意要开通读和写权限。
+这里的`CODING_TOKEN`和`GH_TOKEN`分别是coding和Github的access token，生成方法分别见官方文档(https://github.com/settings/tokens, https://coding.net/user/account/setting/tokens)，
+
+注意要开通读和写权限。
+
+![](https://ws1.sinaimg.cn/large/90b90757gy1fqlrbasunzj20kl08s0tn.jpg)
+
+![](https://ws1.sinaimg.cn/large/90b90757gy1fqlrce0sd0j20p9093dgp.jpg)
 
 ## 11. 配置Travis CI
 
