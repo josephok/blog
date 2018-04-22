@@ -81,7 +81,7 @@ deploy:
   type: git
   repo:
     # github: git@github.com:josephok/josephok.github.io.git
-    github: https://gh_token@github.com:josephok/josephok.github.io.git
+    github: https://gh_token@github.com/josephok/josephok.github.io.git
     # coding: git@git.coding.net:joseph/joseph.coding.me.git
   branch: master
   message: Add post
