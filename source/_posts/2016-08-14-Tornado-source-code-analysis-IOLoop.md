@@ -3,13 +3,16 @@ title: Tornado源码解析之IOLoop
 date: 2016-08-14 22:33:57
 categories: 编程语言
 tags: [Python, Tornado]
+photo: https://ws1.sinaimg.cn/large/90b90757gy1fql867ghr9j20xc0gowf7.jpg
 ---
 
 # 0. 简介
 
 [Tornado](https://github.com/tornadoweb/tornado)是一个用Python语言写成的Web服务器兼Web应用框架，由FriendFeed公司在自己的网站FriendFeed中使用，被Facebook收购以后框架以开源软件形式开放给大众。
 
-tornado最大的特点就是其支持异步IO，所以它有着优异的性能。下表是和一些其他Web框架与服务器的对比:(处理器为 AMD Opteron, 主频2.4GHz, 4核) (来源[wikipedia](https://zh.wikipedia.org/wiki/Tornado)
+tornado最大的特点就是其支持异步IO，所以它有着优异的性能。下表是和一些其他Web框架与服务器的对比:(处理器为 AMD Opteron, 主频2.4GHz, 4核) (来源[wikipedia](https://zh.wikipedia.org/wiki/Tornado))
+
+<!-- more -->
 
 
 服务|	部署|	请求/每秒
