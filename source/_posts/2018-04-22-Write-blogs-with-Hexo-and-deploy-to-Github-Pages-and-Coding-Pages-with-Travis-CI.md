@@ -89,7 +89,12 @@ deploy:
 
 ## 10. 关联到Travis CI
 
-将刚才我们创建的repo添加到Travis CI。并且添加2个环境变量：
+将刚才我们创建的repo添加到Travis CI。
+注意开通“Build pushed branches”。
+
+![](https://ws1.sinaimg.cn/large/90b90757gy1fqlhv67jpxj20pp04rjrr.jpg)
+
+并且添加2个环境变量：
 `CODING_TOKEN`和`GH_TOKEN`。
 
 ![](https://ws1.sinaimg.cn/large/90b90757gy1fqlhept0wvj20sv07hgmf.jpg)
@@ -136,3 +141,6 @@ script:
 
 上面的`CODING_TOKEN`和`GH_TOKEN`正是我们配置的环境变量。
 
+## 12. push本地目录到Github
+
+完成上述步骤之后，只需要将本地目录push到Github仓库即可。接着Travis CI便会生成静态文件并且部署到Github Pages和Coding Pages上。
