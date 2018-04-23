@@ -23,17 +23,12 @@ c)更新u的邻接顶点的距离值，对于每一个邻接顶点v, 如果u的�
 
 来看一个具体的例子:
 
-![](http://d2o58evtke57tz.cloudfront.net/wp-content/uploads/Fig-11.jpg)
 选取顶点0为起始点。sptSet现在是空集，各顶点的距离值分别是{0, &#8734;, &#8734;, &#8734;, &#8734;, &#8734;, &#8734;, &#8734;}
 顶点0加入到sptSet集合中，sptSet为{0}，然后更新顶点0的邻接顶点1和7，此时1的距离值为4, 7的距离值为8。
 sptSet中的顶点显示为绿色：(&#8734;的顶点未予显示)
-![](http://d2o58evtke57tz.cloudfront.net/wp-content/uploads/MST1.jpg)
 选取距离值最小但不在sptSet集合中的顶点，因为1的距离值最小，所以将1加入sptSet中，现在sptSet变为{0, 1}。更新1的邻接顶点的距离值：2的距离值变为4+8=12
-![](http://d2o58evtke57tz.cloudfront.net/wp-content/uploads/DIJ2.jpg)
  现在继续选取距离值最小但不在sptSet集合中的顶点，此时7为最小，所以选取7，sptSet变为{0, 1, 7}。接着更新7的邻接顶点：6的距离值变为8+1=9，8的距离值变为8+7=15
-![](http://d2o58evtke57tz.cloudfront.net/wp-content/uploads/DIJ3.jpg)
 现在选取顶点6，sptSet变为{0, 1, 7, 6}。接着更新6的邻接顶点：5的距离值变为9+2=11，8的距离值为9+6=15
-![](http://d2o58evtke57tz.cloudfront.net/wp-content/uploads/DIJ4.jpg)
 现在选取顶点5，sptSet变为{0, 1, 7, 6, 5}，更新5的邻接顶点：2为11+4=15>12故不更新，3为11+14=25，4为11+10=21
 ![](http://ww3.sinaimg.cn/large/90b90757gw1ec50hbzue9j20hl08k74j.jpg)
 现在选取顶点2，sptSet变为{0, 1, 7, 6, 5, 2}，更新2的邻接顶点：3为12+7=19\<25 故更新3的距离值为19，8为12+2=14\<15 故更新8的距离值为14，5为12+4=16>11故不更新。
