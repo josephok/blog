@@ -22,12 +22,12 @@ $ npm install -g hexo-cli
 安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。
 
 ```bash
-$ hexo init <folder>
-$ cd <folder>
+$ hexo init <dir>
+$ cd <dir>
 $ npm install
 ```
 
-这里的<folder>替换成你自己的目录，比如我这里是`blog`。
+这里的<dir>替换成你自己的目录，比如我这里是`blog`。
 
 ## 3. 配置Hexo
 
@@ -71,7 +71,7 @@ Github Pages无需过多设置。Coding Pages需要在代码-〉Pages服务下�
 
 ## 8. 创建网站源文件repo
 
- 在Github上为我们的源文件（blog目录）创建一个repo。比如repo名称就叫做`blog`。
+ 在Github上为我们的源文件（blog目录）创建一个repo。比如repo名称就叫做`blog`。
 
 ## 9. 配置部署所需变量
 
@@ -89,7 +89,7 @@ deploy:
 
 上面的`<username>`替换成你自己的用户名即可。
 
-## 10. 关联到Travis CI
+## 10. 关联到Travis CI
 
 将刚才我们创建的repo添加到Travis CI。
 注意开通“Build pushed branches”。
@@ -144,7 +144,6 @@ script:
   - sed -i "s/coding_token/${CODING_TOKEN}/g" ./_config.yml
   - hexo deploy
 
-# after_script:
 ```
 
 上面的`CODING_TOKEN`和`GH_TOKEN`正是我们配置的环境变量。
@@ -152,3 +151,11 @@ script:
 ## 12. push本地目录到Github
 
 完成上述步骤之后，只需要将本地目录push到Github仓库即可。接着Travis CI便会生成静态文件并且部署到Github Pages和Coding Pages上。
+
+(PS: 需要先安装`hexo-deployer-git`)
+在`blog`目录：
+
+```bash
+$ npm install hexo-deployer-git --save
+```
+这样Travis CI就会自动安装`hexo-deployer-git`并且成功执行`hexo deploy`了。

@@ -15,23 +15,23 @@ categories: 数据结构与算法
 * 二叉堆的基本操作
 
 下图是一个最小二叉堆，使用数组形式表示：数组索引从1开始。
-![](http://interactivepython.org/runestone/static/pythonds/_images/heapOrder.png)
+![](https://ws1.sinaimg.cn/large/90b90757gy1fqmd74hh7dj20ew0a5js7.jpg)
 
 1. 插入新元素
 
-![](http://interactivepython.org/runestone/static/pythonds/_images/percUp.png)
+![](https://ws1.sinaimg.cn/large/90b90757gy1fqmd7r0zi0j20fj0onwgs.jpg)
 
 比如插入`7`，首先将`7`加在数组的末尾，然后与其父节点比较，如果小于父节点则与之交换，直到大于父节点或到达树的根部。
 
 2. 删除最小元素
 
-![](http://interactivepython.org/runestone/static/pythonds/_images/percDown.png)
+![](https://ws1.sinaimg.cn/large/90b90757gy1fqmd7r0zi0j20fj0onwgs.jpg)
 
 首先移除根部的元素。然后将最后一个元素移到根部，再向下过滤，遇到比它小的元素则交换，直到到达叶子节点或者没有比它更小的元素。
 
 * 二叉堆实现
 
-``` python binary_heap 
+``` python binary_heap
 
 """
 BinaryHeap类：
@@ -58,7 +58,7 @@ class BinaryHeap:
 			if self.items[i] > self.items[min_child_index]:
 				self.items[i], self.items[min_child_index] = self.items[min_child_index], self.items[i]
 			i = min_child_index
-	
+
 	def min_child(self, i):
 		if 2 * i + 1 > self.size:
 			return 2 * i
@@ -110,7 +110,7 @@ if __name__ == '__main__':
 	# will print The minimum data of this Binary Heap is 1
 	binary_heap.insert(1)
 	print("The minimum data of this Binary Heap is {0}".format(binary_heap.find_min()))
-	
+
 	print(binary_heap.is_empty()) # False
 	for i in range(5):
 		binary_heap.delete_min()
