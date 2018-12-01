@@ -1,7 +1,7 @@
 ---
 title: Golang时间处理
 date: 2018-12-01 17:32:34
-tags: golang, time
+tags: [golang, time]
 ---
 
 # 1. 将日期转换为Unix时间戳
