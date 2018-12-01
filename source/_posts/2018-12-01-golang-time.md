@@ -35,6 +35,8 @@ func main() {
 }
 ```
 
+<!-- more -->
+
 # 3. 时间转字符串
 使用`Time.Format(layout)`转字符串，其中layout可以是下面的选项：
 ```go
